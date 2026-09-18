@@ -3,7 +3,21 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "scripts": { "dev": "vite", "build": "vite build", "preview": "vite preview" },
-  "dependencies": { "@vitejs/plugin-react": "latest", "vite": "latest", "react": "latest", "react-dom": "latest" },
-  "devDependencies": {}
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "node --no-warnings --loader ./test/jsx-loader.mjs --test test/*.test.js test/*.test.jsx"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "latest",
+    "qrcode": "^1.5.4",
+    "react": "latest",
+    "react-dom": "latest",
+    "vite": "latest"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.2",
+    "jsdom": "^29.1.1"
+  }
 }
